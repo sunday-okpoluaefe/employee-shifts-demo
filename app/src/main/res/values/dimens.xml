@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="horizontal_margin">64dp</dimen>
+    <dimen name="medium_margin">28dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="edit_text_padding">10dp</dimen>
+    <dimen name="edit_text_radius">5dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="icon_size">18dp</dimen>
+    <dimen name="tiny_space">5dp</dimen>
+    <dimen name="button_height">55dp</dimen>
+</resources>

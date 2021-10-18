@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/shiftFragment">
+
+    <fragment
+        android:id="@+id/shiftFragment"
+        android:name="com.sunday.shiftsapplication.ui.ShiftsFragment"
+        android:label="@string/shift_fragment_label"
+        tools:layout="@layout/fragment_shifts">
+
+        <action
+            android:id="@+id/action_shiftFragment_to_newShiftFragment"
+            app:destination="@id/newShiftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newShiftFragment"
+        android:name="com.sunday.shiftsapplication.ui.NewShiftFragment"
+        android:label="@string/create_fragment_label"
+        tools:layout="@layout/fragment_new_shift">
+
+        <action
+                android:id="@+id/action_newShiftFragment_to_shiftFragment"
+            app:destination="@id/shiftFragment" />
+    </fragment>
+</navigation>
