@@ -94,7 +94,7 @@ class NewShiftFragment : Fragment() {
         }
 
         this.vm.success.observe(this, androidx.lifecycle.Observer {
-            binding.container.snack("Shift has been saved successfully")
+            if(it) binding.container.snack(resources.getString(R.string.success))
         })
     }
 

@@ -18,4 +18,5 @@
     <string name="color_label">Color</string>
     <string name="color_hint">Color</string>
     <string name="save">Save</string>
+    <string name="success">"Shift has been saved successfully"</string>
 </resources>

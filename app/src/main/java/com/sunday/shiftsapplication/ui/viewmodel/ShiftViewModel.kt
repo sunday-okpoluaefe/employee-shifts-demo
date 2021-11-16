@@ -68,6 +68,7 @@ class ShiftViewModel constructor (private val repository: Repository): ViewModel
         loadShifts()
 
         _success.value = true
+        reset()
     }
 
     fun loadShifts() = viewModelScope.launch {
@@ -79,6 +80,14 @@ class ShiftViewModel constructor (private val repository: Repository): ViewModel
        }catch (error: Exception){
 
        }
+    }
+
+    private fun reset(){
+        _startDate.value = 0
+        _endDate.value = 0
+        _employee.value = ""
+        _role.value = ""
+        _color.value = ""
     }
 
     val isSubmitEnabled: Flow<Boolean> = combine(_startDate, _endDate, _employee, _role, _color) { startDate, endDate, employee, role, color ->
